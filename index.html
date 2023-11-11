@@ -5,15 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="CatCookiePlus.ico" href="CatCookiePlus.ico" >
     <title>Charlotte's Bakery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,200&family=Rubik:wght@300;400&display=swap" rel="stylesheet">
     <style>
+
+        header {
+            font-family: 'Noto Serif Display';
+            color: #D6B065;
+            font-size: 200%;
+            
+        }
         body {
+            
             text-align: center;
+            background-image: url('background.png'); /* Replace 'background-image.jpg' with the path to your image file */
+            background-size: cover; /* This property ensures the background image covers the entire body */
+            background-position: center; /* This property centers the background image */
+            background-repeat: no-repeat; /* This property ensures the background image doesn't repeat */
+            
+            font-size: 115%;
+            color: white
+
+            
         }
 
+
+        #Description {
+            font-family: 'Noto Serif Display', serif;
+            font-family: 'Rubik', sans-serif;
+
+        }
         main {
             width: 80%; /* You can adjust this percentage based on your design */
             margin: auto;
             text-align: center; /* Reset text-align for content inside main */
+        }
+
+
+
+        #preview {
+      border: 5px solid #D6B065; /* You can adjust the color and thickness of the border */
+    }
+
+
+        
+        button{
+            background-color: #D6B065;
+            color: black;
+            font-size: 20px;
+        }
+
+
+    
+    button:hover{
+            
+            background-color: black;
+            color:#D6B065;
         }
     </style>
     <!-- Add your stylesheets, scripts, or other meta tags here -->
@@ -27,17 +78,19 @@
     <main>
         <section>
             <h2>Check out the game!</h2>
-            <video src="cat_video.mp4" width="500" controls autoplay muted loop></video>
+            <video id="preview" src="cat_video.mp4" width="500" controls autoplay muted loop></video>
             <br>
             <br>
-<h4>Description</h4>
-<pre>
+<h2 style="color: #D6B065;">Description</h2>
+<pre id="Description">
 Embark on a whimsical culinary adventure in "Charlotte's Bakery"
 the purr-fectly delightful idle game that puts you in the furry shoes of a charming cat with a passion for baking cookies.
 Step into a vibrant and cartoonish world filled with rolling hills of dough,
 towering cookie mountains, and whimsical ovens.
 </pre>
-            <!-- Add more content as needed -->
+<br>
+<br>
+<a href="https://drive.google.com/drive/folders/1-2OYE0Eb9x2Dm9Fzzm-k3Hyww8fppEFx?usp=sharing"><button >Download Alpha Version 0.2</button></a>
         </section>
     </main>
 <br>
